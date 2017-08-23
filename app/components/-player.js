@@ -16,6 +16,7 @@ const {
   },
 } = Ember;
 
+// Look at this if this does not work: https://github.com/nypublicradio/ember-hifi
 let PlayerComponent = Component.extend({
   audio: service(),
 

@@ -1,1 +1,9 @@
-<button type="button" name="button" {{action 'play'}}>{{buttonLabel}}</button>
+{{#unless taskLoadAudio.isRunning}}
+  {{#if hasAudio}}
+    <button type="button" name="button" {{action 'play'}}>{{buttonLabel}}</button>
+  {{else}}
+    <p>The audio could not be loaded</p>
+  {{/if}}
+{{else}}
+  <p>loading audio...</p>
+{{/unless}}
